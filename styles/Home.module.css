@@ -1,0 +1,137 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(131, 214, 231);
+  background: linear-gradient(
+    90deg,
+    #5ae4ff 0%,
+    rgba(131, 231, 141, 1) 31%,
+    rgba(239, 255, 68, 1) 60%,
+    rgba(255, 125, 248, 1) 100%
+  );
+}
+
+.main {
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+  touch-action: none;
+  width: 95vw;
+  height: 90%;
+  background: black;
+  margin: 2rem 2rem 2rem 2rem;
+  overflow-x: hidden;
+}
+
+.headerBox {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.navbarSectionContainer {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.navbarContainer {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+}
+
+.logo {
+  padding-left: 5%;
+}
+
+.list {
+  width: 90%;
+}
+
+.ul {
+  display: flex;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+}
+
+.ul li {
+  color: rgb(155, 161, 167);
+  list-style: none;
+  padding: 2%;
+}
+
+.ul li:hover {
+  color: snow;
+  cursor: pointer;
+}
+
+#menuRequest {
+  color: black;
+  background-color: snow;
+  border-radius: 5%;
+  padding: 1% 3% 1% 3%;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: normal;
+  align-content: normal;
+  color: snow;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 1em;
+  left: 0;
+  font-size: 2rem;
+}
+
+.title {
+  margin: 0 auto;
+}
+
+.description {
+  margin: 0 auto;
+  position: relative;
+  bottom: 15%;
+}
+
+.sponsersList {
+  position: relative;
+  bottom: 60%;
+  display: flex;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sponsersList li {
+  list-style: none;
+  opacity: 50%;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
